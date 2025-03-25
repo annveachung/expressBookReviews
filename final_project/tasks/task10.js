@@ -1,6 +1,6 @@
 const axios = require('axios'); 
 
-async function fetchData() {
+async function getBooks() {
     try {
         const response = await axios.get('http://localhost:5001/');
         
@@ -10,4 +10,4 @@ async function fetchData() {
     }
 }
 
-fetchData();
+getBooks();

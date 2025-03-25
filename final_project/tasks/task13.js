@@ -1,8 +1,8 @@
 const axios = require('axios'); 
 
-async function getBookByIsbn(isbn) {
+async function getBookByTitle(title) {
     try {
-        const response = await axios.get('http://localhost:5001/isbn/' + isbn);
+        const response = await axios.get('http://localhost:5001/title/' + title);
         
         console.log(response.data); 
     } catch (error) {
@@ -10,4 +10,4 @@ async function getBookByIsbn(isbn) {
     }
 }
 
-getBookByIsbn(1);
+getBookByTitle('Fairy tales');
