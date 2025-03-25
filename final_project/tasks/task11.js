@@ -10,4 +10,6 @@ async function getBookByIsbn(isbn) {
     }
 }
 
-getBookByIsbn(1);
+const args = process.argv.slice(2);
+const isbn = args.join(" ");
+getBookByIsbn(isbn);

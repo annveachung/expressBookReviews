@@ -10,4 +10,6 @@ async function getBookByTitle(title) {
     }
 }
 
-getBookByTitle('Fairy tales');
+const args = process.argv.slice(2);
+const title = args.join(" ");
+getBookByTitle(title);

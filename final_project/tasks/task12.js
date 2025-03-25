@@ -10,4 +10,6 @@ async function getBookByAuthor(author) {
     }
 }
 
-getBookByAuthor('Samuel Beckett');
+const args = process.argv.slice(2);
+const author = args.join(" ");
+getBookByAuthor(author);
